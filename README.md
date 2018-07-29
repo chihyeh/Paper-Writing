@@ -26,11 +26,9 @@ After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.2
 *For the histograms, because we want to include 99% signal, we just choose the range that includes them.<br />
 *For analysis, we use the median bin from signal, and fix at that bin **Right side** to be the central, and change the bin width to plot the ROC curves.<br />
 *For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.
-```bash
-For summary: 
+
+#####For summary: 
 we can find that in mass soft drop at beta=0 can separate signal and background perfect up to 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.
 
-
-```
 
 
