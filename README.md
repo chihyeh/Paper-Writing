@@ -25,8 +25,9 @@ This part is from Dr.Sergei.<br />
 After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney test.<br />
 (a)For the histograms, because we want to include 99% signal, we just choose the range that includes them.<br />
 (b)For analysis, we use the median bin from signal, and fix at that bin **Right side** to be the central, and change the bin width to plot the ROC curves.<br />
-(c)
+```bash
 
+ffff
+```
+ffff
 
-
-(4)
