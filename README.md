@@ -1,9 +1,10 @@
 # Paper-Writing
 
-You can download file:
+You can download file:<br />
 git clone https://github.com/chihyeh/Paper-Writing.git
 
-Instruction:
+*This is the structure for the paper.
+*Please not hesitate to ask me any questions.
 
 The main parts are as following:
 #========================================================================================#<br />

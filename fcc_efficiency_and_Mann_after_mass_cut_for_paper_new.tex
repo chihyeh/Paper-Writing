@@ -19,6 +19,105 @@
 %% SP 2008/03/01
 
 % \documentclass[preprint,11pt]{elsarticle}
+\documentclass[final,1p,11pt]{elsarticle}
+
+%\documentclass[final,1p,times]{elsarticle}
+
+
+%% Use the option review to obtain double line spacing
+%%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+
+\usepackage{epsfig}
+%\usepackage{cite}
+%\usepackage{mcite}
+\usepackage{array,tabularx,epsfig,mathrsfs,graphicx,rotating}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{ragged2e}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+% Custom colors
+\usepackage{color}
+\usepackage{float}
+\usepackage{verbatim}
+
+% to cross text
+\usepackage[normalem]{ulem} % either use this (simple) or
+\usepackage{soul} % use this (many fancier options)
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+
+
+
+\graphicspath{{figs/}}
+
+
+\pdfinfo{
+   /Author (Chekanov et al)
+   /Title  (Studies of granularity of a hadronic calorimeter for tens-of-TeV jets  at a 100 TeV pp collider)
+   /CreationDate (D:2017)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+
+\textheight=22cm
+\textwidth=14.5cm
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\la}{\langle}
+\newcommand{\promc}{{\sc ProMC}}
+\newcommand{\ra}{\rangle}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\Ec}{\mathcal{E}}
+\newcommand{\Fc}{\mathcal{F}}
+\newcommand{\Za}{\mathrm{Z_1}}
+\newcommand{\Zb}{\mathrm{Z_2}}
+\newcommand{\Zn}{\mathrm{Z_n}}
+\newcommand{\F}{\mathrm{F}}
+
+\chardef\til=126
+\newcommand{\mev}{{\,\mathrm{MeV}}}
+\newcommand{\gev}{{\,\mathrm{GeV}}}
+\newcommand{\tev}{{\,\mathrm{TeV}}}
+\newcommand{\GEANTfour} {\textsc{geant4}}
+\newcommand{\pythia} {\textsc{Pythia8}}
+
+
+\journal{XXX-XXX}
+
+
+
+\begin{document}
+
+% \documentclass[preprint,11pt]{elsarticle}
 \section{Studies of signal and background separation using Mann-Whitney U test and some new methods}
 %In this section, we study different jet substructure variables and compare their ability to separate the signal and the background for different detector sizes using Mann-Whitney U test.\\
 
@@ -36,40 +135,40 @@
 \begin{figure}
 \begin{center}
    \subfigure[5TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_5tev_04_after_cut_Man.eps}\hfill
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_5tev_04_after_cut_Man_25_new.eps}\hfill
    }
    \subfigure[10TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_40tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[5TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_5tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_5tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[10TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_40tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[5TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_5tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_5tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[10TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_40tev_04_after_cut_Man_25_new.eps}
    }\end{center}
 \caption{Distributions of Mann-Whitney value U in 5, 10, 20, 40TeV energy collision for c2b1 in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
 \label{fig:cluster_c2b1_tau32}
@@ -78,16 +177,16 @@
 \begin{figure}
 \begin{center}
    \subfigure[5 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bins.eps}\hfill
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bins_new.eps}\hfill
    }
    \subfigure[10 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25bins_new.eps}
    }
    \subfigure[20 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_25bins_new.eps}
    }
    \subfigure[40 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut_25bins_new.eps}
    }
 \end{center}
 \caption{Signal efficiency versus background rejection rate using c2b1.The energies of collision at (a)5, (b)10, (c)20, (d)40TeV are shown here. In each picture, the three ROC curves correspond to different detector sizes.}
@@ -100,40 +199,40 @@
 \begin{figure}
 \begin{center}
    \subfigure[5TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_after_cut_Man.eps}\hfill
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_after_cut_Man_25_new.eps}\hfill
    }
    \subfigure[10TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[5TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[10TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[5TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[10TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_after_cut_Man_25_new.eps}
    }\end{center}
 \caption{Distributions of Mann-Whitney value U in 5, 10, 20, 40TeV energy collision for $\tau_{21}$  in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
 \label{fig:cluster_tau21_tau32}
@@ -141,16 +240,16 @@
 \begin{figure}
 \begin{center}
    \subfigure[5 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bins.eps}\hfill
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bins_new.eps}\hfill
    }
    \subfigure[10 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_25bins_new.eps}
    }
    \subfigure[20 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut_25bins_new.eps}
    }
    \subfigure[40 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut_25bins_new.eps}
    }
 \end{center}
 \caption{Signal efficiency versus background rejection rate using $\tau_{21}$.The energies of collision at (a)5, (b)10, (c)20, (d)40TeV are shown here. In each picture, the three ROC curves correspond to different detector sizes.}
@@ -164,40 +263,40 @@
 \begin{figure}
 \begin{center}
    \subfigure[5TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_after_cut_Man.eps}\hfill
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_after_cut_Man_25_new.eps}\hfill
    }
    \subfigure[10TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 20$\times$20(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[5TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[10TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 5$\times$5(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[5TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[10TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[20TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_after_cut_Man_25_new.eps}
    }
    \subfigure[40TeV at 1$\times$1(cm$\times$cm) in 0.5GeV] {
-   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_after_cut_Man.eps}
+   \includegraphics[width=0.22\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_after_cut_Man_25_new.eps}
    }\end{center}
 \caption{Distributions of Mann-Whitney value U in 5, 10, 20, 40TeV energy collision for $\tau_{32}$  in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
 \label{fig:cluster_tau32_tau32}
@@ -206,16 +305,16 @@
 \begin{figure}
 \begin{center}
    \subfigure[5 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bins.eps}\hfill
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bins_new.eps}\hfill
    }
    \subfigure[10 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_25bins_new.eps}
    }
    \subfigure[20 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut_25bins_new.eps}
    }
    \subfigure[40 TeV using Rawhit 0.5GeV cut method with New2 after cut Method] {
-   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut_25bins_new.eps}
    }
 \end{center}
 \caption{Signal efficiency versus background rejection rate using $\tau_{32}$.The energies of collision at (a)5, (b)10, (c)20, (d)40TeV are shown here. In each picture, the three ROC curves correspond to different detector sizes.}
@@ -250,18 +349,19 @@
 \begin{figure}
 \begin{center}
    \subfigure[$\tau_{21}$ rawhit cut at 0.5GeV] {
-   \includegraphics[width=0.43\textwidth]{figs/raw_05_tau21_summary_U_after_cut_25bins.eps}\hfill
+   \includegraphics[width=0.43\textwidth]{figs/raw_05_tau21_summary_U_after_cut_25bins_new.eps}\hfill
    }
    \subfigure[$\tau_{32}$ rawhit cut at 0.5GeV] {
-   \includegraphics[width=0.43\textwidth]{figs/raw_05_tau32_summary_U_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/raw_05_tau32_summary_U_after_cut_25bins_new.eps}
    }
    \subfigure[$c_2^{(1)}$ rawhit cut at 0.5GeV] {
-   \includegraphics[width=0.43\textwidth]{figs/raw_05_c2b1_summary_U_after_cut_25bins.eps}
+   \includegraphics[width=0.43\textwidth]{figs/raw_05_c2b1_summary_U_after_cut_25bins_new.eps}
    }
 \end{center}
 \caption{The Mann-Whitney U values for $\tau_{21}$,$\tau_{32}$ and $c_2^{(1)}$ reconstructed from calorimeter hit at 05GeV cut at different collision energies correspond to different detector sizes in rawhit cut at 05GeV. The energies of collision at 5, 10, 20, 40, 20, 40TeV are shown in each figure.}
 \label{fig:raw_U_summary}
 \end{figure}
+\end{document}
 
 
 
