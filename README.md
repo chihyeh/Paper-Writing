@@ -2,11 +2,12 @@
 
 =============================================<br />
 You can download files:<br />
-git clone https://github.com/chihyeh/Paper-Writing.git 
+git clone https://github.com/chihyeh/Paper-Writing.git <br />
 in your terminal.
 
 *This is the structure for the paper.<br />
 *Please don't hesitate to ask me any questions.<br />
+*I will put all codes are used in this study later.<br />
 
 
 ## The Paper structure
@@ -15,14 +16,14 @@ in your terminal.
 This is the file for summarizeall topics and combine them, including:<br />
 *fcc_jets.tex<br />
 *fcc_Mass_soft_drop_for_paper.tex<br />
-*fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex<br />\
+*fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex<br />
 
 =============================================
 ### fcc_jets.tex
 This part is from Dr.Sergei.<br />
 
 =============================================
-### fcc_Mass_soft_drop_for_paper.tex <br />
+### fcc_Mass_soft_drop_for_paper.tex 
 #### This part include soft drop mass at beta=0 and beta=2 <br \>
 *For the histograms, because we want to include 99% signal, we just choose the range that includes them, and processes are in the figure also.<br />
 *For analysis, we use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
