@@ -4,7 +4,7 @@ You can download file:<br />
 git clone https://github.com/chihyeh/Paper-Writing.git
 
 *This is the structure for the paper.<br />
-*Please not hesitate to ask me any questions.<br />
+*Please don't hesitate to ask me any questions.<br />
 
 
 ### The MAIN part
@@ -16,7 +16,7 @@ This is the file for summary for all topics, including:<br />
 *fcc_Mass_soft_drop_for_paper.tex<br />
 
 
-##fcc_jets.tex
+## fcc_jets.tex
 This part is from Dr.Sergei.<br />
 
 #===========================================================================================================#
