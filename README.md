@@ -1,4 +1,7 @@
+
 # Paper-Writing
+
+color.Println(color.BlackBg("black background", color.Wht))
 
 =============================================<br />
 You can download files:<br />
@@ -27,9 +30,10 @@ This part is from Dr.Sergei.<br />
 #### This part include soft drop mass at beta=0 and beta=2 
 *For histograms:<br />
 All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
+Now we will put all the FIGs in the paper, and we will select some of them to be the representation, and remove others later.<br />
 <br />
 *For analysis:<br />
-we use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
+We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
 
 #### For summary: 
 *We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
