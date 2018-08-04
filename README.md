@@ -8,7 +8,7 @@ You can download files:<br />
 ```
 git clone https://github.com/chihyeh/Paper-Writing.git
 in your terminal.
-
+```
 
 *This is the structure for the paper.<br />
 *Please don't hesitate to ask me any questions.<br />
