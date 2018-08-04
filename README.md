@@ -2,7 +2,7 @@
 # Paper-Writing
 
 color.Println(color.BlackBg("_black background_", color.Wht))
-
+[Visit GitHub!](www.github.com)
 =============================================<br />
 You can download files:<br />
 git clone https://github.com/chihyeh/Paper-Writing.git <br />
