@@ -1,8 +1,7 @@
 
 # Paper-Writing
 
-color.Println(color.BlackBg("black background", color.Wht))
-<font color="red">This is some text!</font>
+color.Println(color.BlackBg("_black background_", color.Wht))
 
 =============================================<br />
 You can download files:<br />
