@@ -29,10 +29,10 @@ This part is from Dr.Sergei.<br />
 =============================================
 ### fcc_Mass_soft_drop_for_paper.tex 
 #### This part include soft drop mass at beta=0 and beta=2 
-*For histograms:<br />
- *All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
- *We choose **cluster** to do the analysis and the histograms we will use.<br />
- *Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.<br />
+*For histograms:
+ *All histograms include underflow and overflow number in the bin 1 and the last bin.
+ *We choose **cluster** to do the analysis and the histograms we will use.
+ *Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.
 <br />
 *For analysis:<br />
  *We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
