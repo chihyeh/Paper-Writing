@@ -5,9 +5,10 @@ color.Println(color.BlackBg("_black background_", color.Wht))
 
 =============================================<br />
 You can download files:<br />
+'''bash
 git clone https://github.com/chihyeh/Paper-Writing.git <br />
 in your terminal.
-
+'''
 *This is the structure for the paper.<br />
 *Please don't hesitate to ask me any questions.<br />
 *I will put all codes which are used in this study on the github later.<br />
