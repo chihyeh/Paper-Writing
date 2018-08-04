@@ -18,7 +18,7 @@ in the terminal
 ## The Paper structure
 
 ### fcc_hcal.tex
-This is the file for summarize topics and combine them, including:<br />
+This is the file for summarize topics and combine them, the combining files include:<br />
 *fcc_jets.tex<br />
 *fcc_Mass_soft_drop_for_paper.tex<br />
 *fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex<br />
