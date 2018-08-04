@@ -38,16 +38,20 @@ This part is from Dr.Sergei.<br />
  *We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
 
 #### For summary: 
-*We can find that in mass soft drop at \beta=0 can separate signal and background perfectly up to 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
-*For beta=2, there is no improvement in all energies when detector cell size is smallest.<br />
+*We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
+*For beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.<br />
 
 =============================================
 ### fcc_efficiency_and_Mann_after_mass_cut_for_paper
-#### This part include Tau21,Tau32,C2b1, and MannWhitney U test 
-*All histograms include underflow and overflow number in the bin 1 and the last bin.
-After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.<br />
-*For analysis, it has many steps:
-By the paper from Professor Jesse Thaler from MIT <https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf>, he suggested us to cut the mass at signal 50%, so the first step, we cut at there.
+#### This part include Tau21,Tau32,C2b1, and MannWhitney U test
+*For histograms:<br />
+ *All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
+ *After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.<br />
+ *In the FIGs, inclunding the histigrams of signal and background, MannWhitney value.<br />
+
+*For analysis:<br />
+ It has many steps as following:<br />
+ *By the paper from Professor Jesse Thaler from MIT <https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf>, he suggested us to cut the mass at signal 50%, so the first step, we cut at there.<br />
 
 The second one, from pearson lemma, it told us that use the ratio bin content to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and 
-*For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.
+*For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.<br />
