@@ -40,7 +40,7 @@ This part is from Dr.Sergei.<br />
 
 >For summary:<br /> 
 *We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
-*For beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.<br />
+*For beta=2, there are no improvement in all center-of-mass energies when detector cell size is smallest.<br />
 
 =============================================
 ### fcc_efficiency_and_Mann_after_mass_cut_for_paper
@@ -53,10 +53,10 @@ This part is from Dr.Sergei.<br />
 *For analysis:<br />
 *It has many steps as following:<br />
  (1)By the paper from Professor Jesse Thaler from MIT-->([The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf))<br />
-  He suggested us to cut the mass at signal 50%, so the first step, we cut at there.<br />
-
+  He suggested us to cut the mass at signal 50%, so the first step, we cut the mass.<br />
  (2)From pearson lemma, it told us that use the ratio bin content to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin.<br />
- (3)And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).
+ (3)And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. <br />
+  For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).
 
 *For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.<br />
 
