@@ -7,7 +7,6 @@ color.Println(color.BlackBg("_black background_", color.Wht))
 You can download files:<br />
 ```
 git clone https://github.com/chihyeh/Paper-Writing.git
-
 ```
 in the terminal
 
