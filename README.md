@@ -3,6 +3,7 @@
 
 color.Println(color.BlackBg("_black background_", color.Wht))
 [Visit GitHub!](www.github.com)
+
 =============================================<br />
 You can download files:<br />
 git clone https://github.com/chihyeh/Paper-Writing.git <br />
@@ -37,7 +38,7 @@ This part is from Dr.Sergei.<br />
  *We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
 
 #### For summary: 
-*We can find that in mass soft drop at $\beta$=0 can separate signal and background perfectly up to 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
+*We can find that in mass soft drop at \beta=0 can separate signal and background perfectly up to 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
 *For beta=2, there is no improvement in all energies when detector cell size is smallest.<br />
 
 =============================================
