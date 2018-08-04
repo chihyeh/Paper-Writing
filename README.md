@@ -38,7 +38,7 @@ This part is from Dr.Sergei.<br />
 *For analysis:<br />
  *We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
 
->For summary: 
+>For summary:<br /> 
 *We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
 *For beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.<br />
 
@@ -60,7 +60,7 @@ This part is from Dr.Sergei.<br />
 
 *For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.<br />
 
->For summary: 
+>For summary:<br />
 *There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 
 
