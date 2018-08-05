@@ -90,7 +90,12 @@ For summary:
 <li>PS: The special conditions and settings
 <ul>
 <li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong>, but we found that when SIG!=0 and BKG=0, the ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually.</li>
+<li>When we compare the ratio bin content, in some conditions, we could bump into the zero ratio bin content, and we set other value to represent this ratio bin content=0.[I will use the "left bin" for example]
+<ul>
 <li></li>
+<li></li>
+</ul>
+</li>
 <li></li>
 </ul>
 </li>
