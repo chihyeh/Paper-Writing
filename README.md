@@ -68,7 +68,7 @@ For summary:
 <ul>
 <li>It has many steps as following
 <ul>
-<li>By the paper from Professor Jesse Thaler from MIT-->([The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)),He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
+<li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf),He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
 <li>From pearson lemma, it told us that use the ratio bin content to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin.</li>
 <li>And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).</li>
 </ul>
