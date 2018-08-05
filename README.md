@@ -40,6 +40,7 @@ This part is from Dr.Sergei.<br />
 <li>For analysis
 <ul>
 <li>We use the <strong>MEDIAN BIN</strong> from signal, and fix at that bin <strong>RIGHT SIDE</strong> to be the central value, and change the width to plot the ROC curves</li>
+<li>We symmetrically add the bins from the central value ( every time we add two bins, and totally add 14 bins to be our width).
 <li>We choose <strong>CLUSTER</strong> to do the analysis as before mention.</li>
 </ul>
 </li>
@@ -47,7 +48,7 @@ This part is from Dr.Sergei.<br />
 
 For summary:
 <ol>
-<li>We can conclude that in soft drop method, beta=0 can separate signal and background <strong>PERFECTLY up to 20TeV center-of-mass energy</strong> in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from background by smallest detector cell size perfectly.</li>
+<li>We can conclude that in soft drop method, beta=0 can separate signal and background <strong>PERFECTLY up to 20 TeV center-of-mass energy</strong> in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from qq by smallest detector cell size perfectly.</li>
 <li>In beta=2, there is <strong>NO IMPROVEMENT</strong> in all center-of-mass energies when detector cell size is smallest.</li>
 </ol>
 
@@ -67,12 +68,12 @@ For summary:
 <ul>
 <li>For analysis
 <ol>
-<li>It has many steps as following
+<li>There have many steps as following
 <ol>
 <li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
     He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
-<li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin and draw the ROC curves.</li>
-<li>We compare left and right ratio bin content from the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content in the next width. For example:
+<li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curve, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin and draw the ROC curves.</li>
+<li>We compare left and right ratio bin content from the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content out of the next width. For example:
 <ol>
 <li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
@@ -89,13 +90,13 @@ For summary:
 <br />
 
 <ul>
-<li>PS: The special conditions and settings
+<li>PS: Detail about the analysis
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function, but we found that when SIG bin content!=0 and BKG bin content=0, that bin ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually, all other ratio bin content is same as default.</li>
-<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content=0 in the certain side, and we set other value to represent this ratio bin content=0.[I will use the "left bin" that we want to compare for example]
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function, but we found that when SIG bin content!=0 and BKG bin content=0, that bin ratio bin content is zero in default, and in the math, if !0/0==>extreme value, so we set the one extreme value manually when SIG bin content!=0 and BKG bin content=0, happen. All other ratio bin content is same as default.</li>
+<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content=0 in the certain side, and we set other value to represent this ratio bin content.[I will use the "left bin" that we want to compare for example]
 <ul>
 <li>Now, supposing that our width now is [14th,15th], we want to compare 13th with 16th. We focus on 13th for example, and the same concpet for right bin 16th, and so on.</li>
-<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : [1th, 12th] SIG and BKG.
+<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : [Minimum bin number=1th in our study, 12th] SIG and BKG.
 <ol>
 <li>If [1th,12th] SIG = 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
 <li>If [1th,12th] SIG != 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
@@ -103,7 +104,8 @@ For summary:
 <li>If [1th,12th] SIG != 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
 </ol>
 </ul>
-<li>And use this method and comparing all the bins, we can draw the ROC curves.</li>
+<li>If left and right have same ratio bin content, we will randomly choose one side to add.</li>
+<li>Comparing all the bins, we can fninish drawing the ROC curves.</li>
 </li>
 </li>
 </ul>
