@@ -91,24 +91,24 @@ For summary:
 <ul>
 <li>PS: Detail about the analysis in Tau and C variables (A little bit complicated)
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, we can find the extreme value in math, so we set an extreme value manually when SIG bin content!=0 and BKG bin content=0 happen. All other ratio bin contents are same as default.</li>
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, we can find the extreme value, so we set an extreme value manually when SIG bin content!=0 and BKG bin content=0 happen. All other ratio bin contents are same as default.</li>
 <br />
-<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side, and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. The formula is Signal/background of the Integral value, I will give an example later.
+<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side (or both sides), and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. The formula is Signal/background of the Integral value, I will give an example later.
 <ul>
 <li>Now, supposing that our width now is [14th,15th], we want to compare 13th with 16th.</li>
-<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : Integral.[Minimum bin number=1th in our study, 12th] of SIG and BKG, and use the setting value to represent this ratio bin content.
+<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : Integral.[Minimum bin number=1th in our study, 12th] of SIG and BKG, and using the setting value to represent this ratio bin content.
 <ol>
-<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
-<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
-<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
-<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
+<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as -1 [13th ratio bin content=-1], and let it continually add other side until both side are no signal and background.</li> 
+<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as 9999[13th ratio bin content=9999], and let it continually add this side until this side have no signal.</li> 
+<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=0[13th ratio bin content=0]</li> 
+<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have[13th ratio bin content=the value it have]</li> 
 </ol>
 <li>If the right ratio bin content is zero (16th bin) in default, we will see two things : [17th,Maximum bin number=25th in our study] SIG and BKG.
 <ol>
-<li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
-<li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
-<li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
-<li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
+<li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as -1[16th ratio bin content=-1], and let it continually add other side until both side are no signal and background.</li> 
+<li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as 9999[16th ratio bin content=9999], and let it continually add this side until this side have no signal.</li> 
+<li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, signal/background=0[16th ratio bin content=0]</li> 
+<li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have[16th ratio bin content=the value it have]</li> 
 </ol>
 
 </ul>
