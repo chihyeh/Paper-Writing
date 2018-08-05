@@ -1,6 +1,15 @@
 
 # Paper-Writing
 
+# CMS HGCal Testbeam Analysis Framework
+
+=============================================
+* This new branch is to be used for analysing data from 2017 test beam. 
+* The code runs with the one layer data, and will need (major) updates when we will have more layers. 
+* This readme assumes one layer data.
+* The README.md in other branches contain useful information about 2016 test beam analysis which might be still useful.
+
+
 color.Println(color.BlackBg("_black background_", color.Wht))
 
 =============================================<br />
