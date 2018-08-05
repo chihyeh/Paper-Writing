@@ -31,18 +31,18 @@ This part is from Dr.Sergei.<br />
 </ul>
 </li>
 </ul>
-* For histograms:<br />
- *  All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
- *  We choose **cluster** to be our sample and do the analysis.<br />
- *  Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.<br />
-<br />
-* For analysis:<br />
- *  We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
+
+<ul>
+<li>For analysis
+<ul>
+<li>We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.
+</ul>
+</li>
+<ul>
 
 >For summary:<br /> 
 * We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
-*For beta=2, there are no improvement in all center-of-mass energies when detector cell size is smallest.<br />
-* **
+* For beta=2, there are no improvement in all center-of-mass energies when detector cell size is smallest.<br />
 =============================================
 ### fcc_efficiency_and_Mann_after_mass_cut_for_paper
 #### This part include Tau21,Tau32,C2b1, and MannWhitney U test
