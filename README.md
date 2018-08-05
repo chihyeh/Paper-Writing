@@ -105,7 +105,7 @@ For summary:
 <li>PS2: Detail about the analysis for Tau and C variables (A little bit complicated)
 <br />
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, it will be an extreme value, so we set an extreme value manually when [SIG bin content!=0 and BKG bin content=0] happen, we set this ratio bin content as 9999. All other ratio bin contents are same as default.</li>
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !=0/=0, it will be an extreme value, so we set an extreme value manually when [SIG bin content!=0 and BKG bin content=0] happen, we set this ratio bin content as 9999. All other ratio bin contents are same as default.</li>
 <br />
 <li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side (or both sides), and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content, and do some calculations, give out the number to represent this ratio bin content. I will give the example later.
 <ul>
