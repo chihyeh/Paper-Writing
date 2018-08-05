@@ -77,7 +77,7 @@ For summary:
 <li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
 <li>Next, because our new width is [14th,15th], so we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
-<li>There have some special cases when we do and compare the ratio histogram bin content, I will add some <strong>special conditions and our settings</strong> in the following section.</li>
+<li>There have some special cases when we do and compare the ratio histogram bin content, I will talk some <strong>special conditions and our settings</strong> in the following section.</li>
 </ol>
 </ol>
 <li>For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.</li>
@@ -91,18 +91,19 @@ For summary:
 <ul>
 <li>PS: The special conditions and settings
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function, but we found that when SIG!=0 and BKG=0, the ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually, all other ratio bin content is same as default.</li>
-<li>When we compare the ratio bin content, in some conditions, we could bump into the ratio bin content=0, and we set other value to represent this ratio bin content=0.[I will use the "left bin" that we want to compare for example]
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function, but we found that when SIG bin content!=0 and BKG bin content=0, that bin ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually, all other ratio bin content is same as default.</li>
+<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content=0 in the certain side, and we set other value to represent this ratio bin content=0.[I will use the "left bin" that we want to compare for example]
 <ul>
-<li>I will use the left bin that we will compare for example. Now, suppose we want to compare 13th with 16th, and we focus on 13th, and the same concpet for right bin 16th, and so on.</li>
-<li>If the left ratio bin content is zero (13th bin), we will see two things : [1th, 12th] SIG and BKG.
+<li>Now, supposing that our width now is [14th,15th], we want to compare 13th with 16th. We focus on 13th for example, and the same concpet for right bin 16th, and so on.</li>
+<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : [1th, 12th] SIG and BKG.
 <ol>
-<li>If [1th,12th] SIG = 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin as -1, and let it continually add other side until both side are no signal and background</li> 
-<li>If [1th,12th] SIG != 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin as 9999, and let it continually add this side until this side have no signal.</li> 
+<li>If [1th,12th] SIG = 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
+<li>If [1th,12th] SIG != 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
 <li>If [1th,12th] SIG = 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
 <li>If [1th,12th] SIG != 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
 </ol>
 </ul>
+<ul>And use this method and comparing all the bins, we can draw the ROC curves.
 </li>
 </li>
 </ul>
