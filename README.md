@@ -70,14 +70,14 @@ For summary:
 <li>There have many steps as following
 <ol>
 <li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
-    He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
+    He suggested us to cut the mass at signal 50%, so the first step, we cut at there. I will talk about the detail in the PS1</li>
 <li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curve, so the second one, we draw the ratio histogram, and we find the highest ratio bin content to be the first bin and draw the ROC curves.</li>
 <li>We compare left and right ratio bin content from the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content out of the next width. For example:
 <ol>
 <li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
 <li>Next, because our new width is [14th,15th], we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
-<li>There have some special cases when we do and compare the ratio histogram bin, I will talk some <strong>special conditions and our settings</strong> in PS.</li>
+<li>There have some special cases when we do and compare the ratio histogram bin, I will talk some <strong>special conditions and our settings</strong> in PS2.</li>
 </ol>
 </ol>
 <li>For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.</li>
@@ -89,7 +89,17 @@ For summary:
 <br />
 
 <ul>
-<li>PS: Detail about the analysis in Tau and C variables (A little bit complicated)
+<li>PS1:Detail about the analysis for mass_cut method
+<ol>
+<li>First, we will find the highest signal bin in the signal histogram.</li>
+<li>Next, we will compare the left and the right of the highest signal bin content, and add the higher side to be the width.</li>
+<li>Until we find one width that is include more than 50% signal, we stop at there, and give out the tau C variables.</li>
+</ol>
+</li>
+</ul>
+
+<ul>
+<li>PS2: Detail about the analysis for Tau and C variables (A little bit complicated)
 <br />
 <ul>
 <li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, we can find the extreme value, so we set an extreme value manually when SIG bin content!=0 and BKG bin content=0 happen. All other ratio bin contents are same as default.</li>
