@@ -95,7 +95,7 @@ For summary:
 <ol>
 <li>First, we will find the highest signal bin in the signal histogram.</li>
 <li>Next, we will compare the left and the right bin content of the highest signal bin content, and add the higher side to be the width.</li>
-<li>If left and right side of the bin content is same, we will randoly choose one.
+<li>If left and right side of the bin content are same, we will randoly choose one.
 <li>Until we find one width that includes more than 50% signal, we stop at there, and give out the Tau and C variables.</li>
 </ol>
 </li>
@@ -105,17 +105,17 @@ For summary:
 <li>PS2: Detail about the analysis for Tau and C variables (A little bit complicated)
 <br />
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, it will be an extreme value, so we set an extreme value manually when [SIG bin content!=0 and BKG bin content=0] happen. All other ratio bin contents are same as default.</li>
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, it will be an extreme value, so we set an extreme value manually when [SIG bin content!=0 and BKG bin content=0] happen, we set this ratio bin content as 9999. All other ratio bin contents are same as default.</li>
 <br />
-<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side (or both sides), and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. I will give the example later.
+<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side (or both sides), and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content, and do some calculations, give out the number to represent this ratio bin content. I will give the example later.
 <ul>
 <li>Now, supposing that our width now is [14th,15th], we want to compare 13th with 16th.</li>
 <li>If the left ratio bin content is zero (13th bin) in default, we will see two things : Integral.[Minimum bin number=1th in our study, 12th] of SIG and BKG, and using the setting value to represent this ratio bin content.
 <ol>
 <li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as -1 [13th ratio bin content=-1], and let it continually add other side until both side are no signal and background.</li> 
 <li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as 9999[13th ratio bin content=9999], and let it continually add this side until this side have no signal.</li> 
-<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, SIG.Integral[1th,12th] /BKG.Integral[1th,12th] =0[13th ratio bin content=0]</li> 
-<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, SIG.Integral[1th,12th]/BKG.Integral[1th,12th] =the value it has[13th ratio bin content=the value it has]</li> 
+<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th] != 0 ==> Just similar to the ratio histogram formula, SIG.Integral[1th,12th] /BKG.Integral[1th,12th] =0[13th ratio bin content=0]</li> 
+<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th] != 0 ==> Just similar to the ratio histogram formula, SIG.Integral[1th,12th]/BKG.Integral[1th,12th] =the value it has[13th ratio bin content=the value it has]</li> 
 </ol>
 <li>If the right ratio bin content is zero (16th bin) in default, we will see two things : [17th,Maximum bin number=25th in our study] SIG and BKG, and using the setting value to represent this ratio bin content.
 <ol>
@@ -126,7 +126,7 @@ For summary:
 </ol>
 <li>Every time we bump into the condition that ratio bin content is zero, we will use the same concept to choose.</li>
 </ul>
-<li>If left and right have same ratio bin content, we will randomly choose one side to add.</li>
+<li>If left and right ratio bin have same ratio bin content, we will randomly choose one side to add.</li>
 <li>Comparing all the bins, we can fninish drawing the ROC curves.</li>
 </li>
 </li>
