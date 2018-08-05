@@ -81,4 +81,10 @@ For summary:
 For summary: 
 * There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 
+```bash
+For the strategy about the analysis for Tau and C variables, I will tell in this section:
+
+```
+
+
 
