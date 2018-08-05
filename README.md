@@ -124,7 +124,7 @@ For summary:
 <li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, SIG.Integral[17th,25th]/BKG.Integral[17th,25th]=0[16th ratio bin content=0]</li> 
 <li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, SIG.Integral[17th,25th]/BKG.Integral[17th,25th]=the value it has[16th ratio bin content=the value it has]</li> 
 </ol>
-
+<li>Every time we bump into the condition that ratio bin content is zero, we will use the same concept to choose.</li>
 </ul>
 <li>If left and right have same ratio bin content, we will randomly choose one side to add.</li>
 <li>Comparing all the bins, we can fninish drawing the ROC curves.</li>
