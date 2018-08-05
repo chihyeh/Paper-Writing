@@ -72,7 +72,7 @@ For summary:
 <li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
     He suggested us to cut the mass (Becasue we found that beta=0 is better to distinguish signal from background than beta=2, we choose beta=0 soft drop mass to cut) at signal 50%, so the first step, we cut at there. I will talk about the detail of analysis in the PS1.</li>
 <li>From Pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curve, so the second step, we draw the ratio histogram, and we find the highest ratio bin content to be the first bin (Starting bin,Seed bin) and draw the ROC curves.</li>
-<li>Then, We compare left and right ratio bin content of the highest ratio bin, We will add the higher side to be our next width, and keep comparing left and right ratio bin content in the new width. For example:
+<li>Then, We compare left and right ratio bin content of the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content in the new width. For example:
 <ol>
 <li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
