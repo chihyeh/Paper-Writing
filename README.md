@@ -7,17 +7,6 @@
 * This readme assumes one layer data.
 * The README.md in other branches contain useful information about 2016 test beam analysis which might be still useful.
 
-
-color.Println(color.BlackBg("_black background_", color.Wht))
-
-=============================================
-
-
-* This is the structure for the paper.<br />
-* Please don't hesitate to ask me any questions.<br />
-* I will put all codes which are used in this study on the github later.<br />
-
-
 ## The Paper structure
 
 ### fcc_hcal.tex
@@ -33,6 +22,15 @@ This part is from Dr.Sergei.<br />
 =============================================
 ### fcc_Mass_soft_drop_for_paper.tex 
 #### This part include soft drop mass at beta=0 and beta=2 
+<ul>
+<li>For histograms
+<ul>
+<li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
+<li>We choose **cluster** to be our sample and do the analysis.</li>
+<li>Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.</li>
+</ul>
+</li>
+</ul>
 * For histograms:<br />
  *  All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
  *  We choose **cluster** to be our sample and do the analysis.<br />
