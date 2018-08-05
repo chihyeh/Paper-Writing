@@ -31,7 +31,7 @@ This part is from Dr.Sergei.<br />
 <ul>
 <li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
 <li>We choose <strong>CLUSTER</strong> to do the analysis and the histograms.</li>
-<li>Now we put all FIGs in the paper, and we will select some of them to be the representations, removing others later.</li>
+<li>Now we put all Figures in the paper, and we will select some of them to be the representations, removing others later.</li>
 </ul>
 </li>
 </ul>
@@ -41,7 +41,6 @@ This part is from Dr.Sergei.<br />
 <ul>
 <li>We use the <strong>MEDIAN BIN</strong> from signal, and fix at that bin <strong>RIGHT SIDE</strong> to be the central value, and change the width to plot the ROC curves</li>
 <li>We symmetrically add the bins from the central value ( every time we add two bins, and totally add 14 bins to be our width).
-<li>We choose <strong>CLUSTER</strong> to do the analysis as before mention.</li>
 </ul>
 </li>
 </ul>
@@ -72,13 +71,13 @@ For summary:
 <ol>
 <li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
     He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
-<li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curve, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin and draw the ROC curves.</li>
+<li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curve, so the second one, we draw the ratio histogram, and we find the highest ratio bin content to be the first bin and draw the ROC curves.</li>
 <li>We compare left and right ratio bin content from the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content out of the next width. For example:
 <ol>
 <li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
 <li>Next, because our new width is [14th,15th], so we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
-<li>There have some special cases when we do and compare the ratio histogram bin content, I will talk some <strong>special conditions and our settings</strong> in the following section.</li>
+<li>There have some special cases when we do and compare the ratio histogram bin, I will talk some <strong>special conditions and our settings</strong> in PS.</li>
 </ol>
 </ol>
 <li>For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.</li>
@@ -90,25 +89,26 @@ For summary:
 <br />
 
 <ul>
-<li>PS: Detail about the analysis
+<li>PS: Detail about the analysis in Tau and C variables (A little bit complicated)
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin ratio bin content is zero in default. But in the math, if !0/0, we can find the extreme value in math, so we set the one extreme value manually when SIG bin content!=0 and BKG bin content=0 happen. All other ratio bin contents are same as default.</li>
-<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content=0 in the certain side, and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. The formula is Signal/background of the Integral value.
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, we can find the extreme value in math, so we set an extreme value manually when SIG bin content!=0 and BKG bin content=0 happen. All other ratio bin contents are same as default.</li>
+<br />
+<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side, and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. The formula is Signal/background of the Integral value, I will give an example later.
 <ul>
 <li>Now, supposing that our width now is [14th,15th], we want to compare 13th with 16th.</li>
-<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : Integral[Minimum bin number=1th in our study, 12th] SIG and BKG.
+<li>If the left ratio bin content is zero (13th bin) in default, we will see two things : Integral.[Minimum bin number=1th in our study, 12th] of SIG and BKG, and use the setting value to represent this ratio bin content.
 <ol>
-<li>If Integral[1th,12th] SIG = 0 , Integral[1th,12th] BKG = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
-<li>If Integral[1th,12th] SIG != 0 , Integral[1th,12th] BKG = 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
-<li>If Integral[1th,12th] SIG = 0 , Integral[1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
-<li>If Integral[1th,12th] SIG != 0 , Integral[1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
+<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
+<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th]= 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
+<li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
+<li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
 </ol>
 <li>If the right ratio bin content is zero (16th bin) in default, we will see two things : [17th,Maximum bin number=25th in our study] SIG and BKG.
 <ol>
-<li>If Integral[17th,25th] SIG = 0 , Integral[17th,25th] BKG = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
-<li>If Integral[17th,25th] SIG != 0 , Integral[17th,25th] BKG = 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
-<li>If Integral[17th,25th] SIG = 0 , Integral[17th,25th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
-<li>If Integral[17th,25th] SIG != 0 , Integral[17th,25th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
+<li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
+<li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as 9999, and let it continually add this side until this side have no signal.</li> 
+<li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
+<li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
 </ol>
 
 </ul>
