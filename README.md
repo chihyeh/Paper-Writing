@@ -64,7 +64,7 @@ For summary:
 </li>
 </ul>
 
-<ol>
+<ul>
 <li>For analysis
 <ol>
 <li>It has many steps as following
@@ -74,7 +74,7 @@ For summary:
 <li>And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).</li>
 </ol>
 <li>For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.</li>
-</ol>
+</ul>
 
 For summary: 
 * There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
