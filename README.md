@@ -1,8 +1,8 @@
 
 # Paper-Writing
 
-* This is the structure for the paper.<br />
-* Please don't hesitate to ask me any questions.<br />
+* This is the structure of the paper.<br />
+* Please doesn't hesitate to ask me any questions.<br />
 * I will put all codes which are used in this study on the github later.<br />
 
 You can download the files:
@@ -14,7 +14,7 @@ in the terminal
 ## The Paper structure
 
 ### fcc_hcal.tex
-This is the file for summarize topics and combine them, the combining files include:<br />
+This is the file for summarizing topics and combine them, the combining files include:<br />
 * fcc_jets.tex<br />
 * fcc_Mass_soft_drop_for_paper.tex<br />
 * fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex<br />
@@ -71,11 +71,11 @@ For summary:
 <ol>
 <li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
     He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
-<li>From pearson lemma, it told us that use the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin and draw the ROC curves.</li>
+<li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin and draw the ROC curves.</li>
 <li>We compare left and right ratio bin content from the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content in the next width. For example:
 <ol>
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
-<li>Next, becasue our new width is [14th,15th], so we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
+<li>Next, because our new width is [14th,15th], so we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
 <li>There have some special cases when we do and compare the ratio histogram bin content, I will add some <strong>special conditions and our settings</strong> in the following section.</li>
 </ol>
 </ol>
@@ -86,18 +86,23 @@ For summary:
 * There are <strong>no improvement</strong> in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 <br />
 <br />
+
 <ul>
 <li>PS: The special conditions and settings
 <ul>
-<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong>, but we found that when SIG!=0 and BKG=0, the ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually.</li>
-<li>When we compare the ratio bin content, in some conditions, we could bump into the zero ratio bin content, and we set other value to represent this ratio bin content=0.[I will use the "left bin" for example]
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function, but we found that when SIG!=0 and BKG=0, the ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually, all other ratio bin content is same as default.</li>
+<li>When we compare the ratio bin content, in some conditions, we could bump into the ratio bin content=0, and we set other value to represent this ratio bin content=0.[I will use the "left bin" that we want to compare for example]
 <ul>
-<li></li>
-<li></li>
+<li>I will use the left bin that we will compare for example. Now, suppose we want to compare 13th with 16th, and we focus on 13th, and the same concpet for right bin 16th, and so on.</li>
+<li>If the left ratio bin content is zero (13th bin), we will see two things : [1th, 12th] SIG and BKG.
+<ol>
+<li>If [1th,12th] SIG = 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin as -1, and let it continually add other side until both side are no signal and background</li> 
+<li>If [1th,12th] SIG != 0 , [1th,12th] BKG = 0 ==> We will set the ratio bin as 9999, and let it continually add this side until this side have no signal.</li> 
+<li>If [1th,12th] SIG = 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
+<li>If [1th,12th] SIG != 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
+</ol>
 </ul>
 </li>
-<li></li>
-</ul>
 </li>
 </ul>
 
