@@ -84,6 +84,17 @@ For summary:
 
 For summary: 
 * There are <strong>no improvement</strong> in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
+<br />
+<br />
+<ul>
+<li>PS: The special conditions and settings
+<ul>
+<li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong>, but we found that when SIG!=0 and BKG=0, the ratio bin content is zero, and in the math, if !0/0==>extreme value, so we set the one extreme value manually.</li>
+<li></li>
+<li></li>
+</ul>
+</li>
+</ul>
 
 
 
