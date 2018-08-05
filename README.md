@@ -103,7 +103,7 @@ For summary:
 <li>If [1th,12th] SIG != 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
 </ol>
 </ul>
-<ul>And use this method and comparing all the bins, we can draw the ROC curves.
+<li>And use this method and comparing all the bins, we can draw the ROC curves.</li>
 </li>
 </li>
 </ul>
