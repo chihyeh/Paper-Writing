@@ -6,9 +6,9 @@
 * I will put all codes which are used in this study on the github later.<br />
 
 You can download the files:
-'''bash
+```bash
 git clone https://github.com/chihyeh/Paper-Writing.git
-'''
+```
 in the terminal
 
 =============================================<br />
