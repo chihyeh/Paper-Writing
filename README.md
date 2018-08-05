@@ -11,15 +11,13 @@ git clone https://github.com/chihyeh/Paper-Writing.git
 ```
 in the terminal
 
-=============================================<br />
-
 ## The Paper structure
 
 ### fcc_hcal.tex
 This is the file for summarize topics and combine them, the combining files include:<br />
-*fcc_jets.tex<br />
-*fcc_Mass_soft_drop_for_paper.tex<br />
-*fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex<br />
+* fcc_jets.tex<br />
+* fcc_Mass_soft_drop_for_paper.tex<br />
+* fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex<br />
 
 =============================================
 ### fcc_jets.tex
@@ -27,19 +25,31 @@ This part is from Dr.Sergei.<br />
 
 =============================================
 ### fcc_Mass_soft_drop_for_paper.tex 
-#### This part include soft drop mass at beta=0 and beta=2 
-*For histograms:<br />
- *All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
- *We choose **cluster** to do the analysis and the histograms.<br />
- *Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.<br />
-<br />
-*For analysis:<br />
- *We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.<br />
+#### This part includes soft drop mass at beta=0 and beta=2 
+<ul>
+<li>For histograms
+<ul>
+<li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
+<li>We choose <strong>CLSTER</strong> to do the analysis and the histograms.</li>
+<li>Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.</li>
+</ul>
+</li>
+</ul>
 
-#### For summary: 
-*We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.<br />
-*For beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.<br />
+<ul>
+<li>For analysis
+<ul>
+<li>We use the <strong>MEDIAN BIN</strong> from signal, and fix at that bin <strong>RIGHT SIDE</strong> to be the central, and change the width to plot the ROC curves</li>
+<li>We choose <strong>Cluster</strong> to do the analysis and the histograms also.</li>
+</ul>
+</li>
+</ul>
 
+>For summary:
+<ol>
+<li>We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.</li>
+<li>or beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.</li>
+</ol>
 =============================================
 ### fcc_efficiency_and_Mann_after_mass_cut_for_paper
 #### This part include Tau21,Tau32,C2b1, and MannWhitney U test
