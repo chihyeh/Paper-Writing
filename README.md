@@ -47,8 +47,8 @@ This part is from Dr.Sergei.<br />
 
 For summary:
 <ol>
-<li>We can conclude that in soft drop method, beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from background by smallest detector cell size perfectly.</li>
-<li>In beta=2, there is <strong>no improvement</strong> in all center-of-mass energies when detector cell size is smallest.</li>
+<li>We can conclude that in soft drop method, beta=0 can separate signal and background <strong>PERFECTLY up to 20TeV center-of-mass energy</strong> in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from background by smallest detector cell size perfectly.</li>
+<li>In beta=2, there is <strong>NO IMPROVEMENT</strong> in all center-of-mass energies when detector cell size is smallest.</li>
 </ol>
 
 =============================================
