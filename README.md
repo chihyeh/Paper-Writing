@@ -74,6 +74,7 @@ For summary:
 <li>From pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin and draw the ROC curves.</li>
 <li>We compare left and right ratio bin content from the highest ratio bin content, We will add the higher side to be our next width, and keep comparing left and right ratio bin content in the next width. For example:
 <ol>
+<li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
 <li>Next, because our new width is [14th,15th], so we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
 <li>There have some special cases when we do and compare the ratio histogram bin content, I will add some <strong>special conditions and our settings</strong> in the following section.</li>
