@@ -94,7 +94,7 @@ For summary:
 <li>First, we will find the highest signal bin in the signal histogram.</li>
 <li>Next, we will compare the left and the right bin content of the highest signal bin content, and add the higher side to be the width.</li>
 <li>If left and right side of the bin content is same, we will randoly choose one.
-<li>Until we find one width that includes more than 50% signal, we stop at there, and give out the tau C variables.</li>
+<li>Until we find one width that includes more than 50% signal, we stop at there, and give out the Tau and C variables.</li>
 </ol>
 </li>
 </ul>
