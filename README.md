@@ -52,7 +52,7 @@ For summary:
 </ol>
 
 =============================================
-### fcc_efficiency_and_Mann_after_mass_cut_for_paper
+### fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex
 #### This part include Tau21,Tau32,C2b1, and MannWhitney U test
 <ul>
 <li>For histograms
