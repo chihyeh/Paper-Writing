@@ -104,7 +104,7 @@ For summary:
 <li>If SIG.Integral[1th,12th] = 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=0[13th ratio bin content=0]</li> 
 <li>If SIG.Integral[1th,12th] != 0 , BKG.Integral[1th,12th] != 0 ==> Just like the ratio bin content formula, signal/background=the value it have[13th ratio bin content=the value it have]</li> 
 </ol>
-<li>If the right ratio bin content is zero (16th bin) in default, we will see two things : [17th,Maximum bin number=25th in our study] SIG and BKG.
+<li>If the right ratio bin content is zero (16th bin) in default, we will see two things : [17th,Maximum bin number=25th in our study] SIG and BKG, and using the setting value to represent this ratio bin content.
 <ol>
 <li>If SIG.Integral[17th,25th] = 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as -1[16th ratio bin content=-1], and let it continually add other side until both side are no signal and background.</li> 
 <li>If SIG.Integral[17th,25th] != 0 , BKG.Integral[17th,25th] = 0 ==> We will set the ratio bin content as 9999[16th ratio bin content=9999], and let it continually add this side until this side have no signal.</li> 
