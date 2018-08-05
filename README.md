@@ -103,8 +103,6 @@ For summary:
 <li>If [1th,12th] SIG = 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=0</li> 
 <li>If [1th,12th] SIG != 0 , [1th,12th] BKG != 0 ==> Just like the ratio bin content formula, signal/background=the value it have</li> 
 </ol>
-</ul>
-
 <li>If the right ratio bin content is zero (16th bin) in default, we will see two things : [17th,Maximum bin number=25th in our study] SIG and BKG.
 <ol>
 <li>If [17th,25th] SIG = 0 , [17th,25th] BKG = 0 ==> We will set the ratio bin content as -1, and let it continually add other side until both side are no signal and background.</li> 
