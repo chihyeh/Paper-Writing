@@ -26,14 +26,14 @@ This part is from Dr.Sergei.<br />
 <li>For histograms
 <ul>
 <li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
-<li>We choose **cluster** to be our sample and do the analysis.</li>
+<li>We choose __cluster__ to be our sample and do the analysis.</li>
 <li>Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.</li>
 </ul>
 </li>
 </ul>
 * For histograms:<br />
  *  All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
- *  We choose __cluster__ to be our sample and do the analysis.<br />
+ *  We choose **cluster** to be our sample and do the analysis.<br />
  *  Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.<br />
 <br />
 * For analysis:<br />
