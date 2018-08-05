@@ -90,6 +90,7 @@ For summary:
 
 <ul>
 <li>PS: Detail about the analysis in Tau and C variables (A little bit complicated)
+<br />
 <ul>
 <li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, we can find the extreme value, so we set an extreme value manually when SIG bin content!=0 and BKG bin content=0 happen. All other ratio bin contents are same as default.</li>
 <br />
