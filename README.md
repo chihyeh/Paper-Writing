@@ -89,7 +89,7 @@ For summary:
 <br />
 
 <ul>
-<li>PS1:Detail about the analysis for mass_cut method
+<li>PS1: Detail about the analysis for mass_cut method (Histograms are from soft drop mass at beta=0)
 <ol>
 <li>First, we will find the highest signal bin in the signal histogram.</li>
 <li>Next, we will compare the left and the right of the highest signal bin content, and add the higher side to be the width.</li>
