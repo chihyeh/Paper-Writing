@@ -13,9 +13,9 @@ color.Println(color.BlackBg("_black background_", color.Wht))
 =============================================
 
 
-*This is the structure for the paper.<br />
-*Please don't hesitate to ask me any questions.<br />
-*I will put all codes which are used in this study on the github later.<br />
+* This is the structure for the paper.<br />
+* Please don't hesitate to ask me any questions.<br />
+* I will put all codes which are used in this study on the github later.<br />
 
 
 ## The Paper structure
