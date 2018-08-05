@@ -48,7 +48,7 @@ This part is from Dr.Sergei.<br />
 For summary:
 <ol>
 <li>We can conclude that in soft drop method, beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from background by smallest detector cell size perfectly.</li>
-<li>In beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.</li>
+<li>In beta=2, there is <strong>no improvement</strong> in all center-of-mass energies when detector cell size is smallest.</li>
 </ol>
 
 =============================================
@@ -76,14 +76,14 @@ For summary:
 <ol>
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
 <li>Next, becasue our new width is [14th,15th], so we need to compare the ratio bin content about 13th and 16th, if 16th is higher than 13th, we will add the width to [14th,16th], and so on.</li>
-<li>There have some special cases when we do and compare the ratio histogram bin content, I will add some special condition and our setting in the following section.</li>
+<li>There have some special cases when we do and compare the ratio histogram bin content, I will add some <strong>special conditions and our settings</strong> in the following section.</li>
 </ol>
 </ol>
 <li>For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.</li>
 </ul>
 
 For summary: 
-* There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
+* There are <strong>no improvement</strong> in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 
 
 
