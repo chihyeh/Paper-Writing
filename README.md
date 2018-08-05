@@ -27,7 +27,7 @@ This part is from Dr.Sergei.<br />
 <ul>
 <li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
 <li>We choose <strong>cluster</strong> to be our sample and do the analysis.</li>
-<li>Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.</li>
+<li>Now we put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.</li>
 </ul>
 </li>
 </ul>
