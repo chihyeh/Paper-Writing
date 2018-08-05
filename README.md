@@ -30,8 +30,8 @@ This part is from Dr.Sergei.<br />
 <li>For histograms
 <ul>
 <li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
-<li>We choose <strong>CLSTER</strong> to do the analysis and the histograms.</li>
-<li>Now we will put all the FIGs in the paper, and we will select some of them to be the representations, and remove others later.</li>
+<li>We choose <strong>CLUSTER</strong> to do the analysis and the histograms.</li>
+<li>Now we put all FIGs in the paper, and we will select some of them to be the representations, removing others later.</li>
 </ul>
 </li>
 </ul>
@@ -39,16 +39,16 @@ This part is from Dr.Sergei.<br />
 <ul>
 <li>For analysis
 <ul>
-<li>We use the <strong>MEDIAN BIN</strong> from signal, and fix at that bin <strong>RIGHT SIDE</strong> to be the central, and change the width to plot the ROC curves</li>
-<li>We choose <strong>Cluster</strong> to do the analysis and the histograms also.</li>
+<li>We use the <strong>MEDIAN BIN</strong> from signal, and fix at that bin <strong>RIGHT SIDE</strong> to be the central value, and change the width to plot the ROC curves</li>
+<li>We choose <strong>Cluster</strong> to do the analysis as before mention.</li>
 </ul>
 </li>
 </ul>
 
 For summary:
 <ol>
-<li>We can find that in mass soft drop at beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Upper to that, both of tt and ww can't be distinguished by smallest detector cell size.</li>
-<li>or beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.</li>
+<li>We can conclude that in soft drop method, beta=0 can separate signal and background perfectly up to center-of-mass at 20TeV in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from background by smallest detector cell size perfectly.</li>
+<li>In beta=2, there is no improvement in all center-of-mass energies when detector cell size is smallest.</li>
 </ol>
 
 =============================================
@@ -58,8 +58,8 @@ For summary:
 <li>For histograms
 <ul>
 <li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
-<li>After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.</li>
-<li>In the FIGs, inclunding the histigrams of signal and background, MannWhitney value.</li>
+<li>After selecting with Prof.Ashutosh, we choose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.</li>
+<li>In the FIGs, inclunding the histigrams of signal and background, and MannWhitney value.</li>
 </ul>
 </li>
 </ul>
@@ -69,7 +69,8 @@ For summary:
 <ol>
 <li>It has many steps as following
 <ol>
-<li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf),He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
+<li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
+    He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
 <li>From pearson lemma, it told us that use the ratio bin content to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin.</li>
 <li>And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).</li>
 </ol>
