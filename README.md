@@ -53,22 +53,29 @@ For summary:
 =============================================
 ### fcc_efficiency_and_Mann_after_mass_cut_for_paper
 #### This part include Tau21,Tau32,C2b1, and MannWhitney U test
-*For histograms:<br />
- *All histograms include underflow and overflow number in the bin 1 and the last bin.<br />
- *After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.<br />
- *In the FIGs, inclunding the histigrams of signal and background, MannWhitney value.<br />
+<ul>
+<li>For histograms
+<ul>
+<li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
+<li>After selecting with Prof.Ashutosh, we chose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.</li>
+<li>In the FIGs, inclunding the histigrams of signal and background, MannWhitney value.</li>
+</ul>
+</li>
+</ul>
 
-*For analysis:<br />
-*It has many steps as following:<br />
- (1)By the paper from Professor Jesse Thaler from MIT-->([The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf))<br />
-  He suggested us to cut the mass at signal 50%, so the first step, we cut at there.<br />
+<ul>
+<li>For analysis
+<ul>
+<li>It has many steps as following
+<ul>
+<li>By the paper from Professor Jesse Thaler from MIT-->([The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)),He suggested us to cut the mass at signal 50%, so the first step, we cut at there.</li>
+<li>From pearson lemma, it told us that use the ratio bin content to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin.</li>
+<li>And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).</li>
+</ul>
+<li>For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.</li>
+</ul>
 
- (2)From pearson lemma, it told us that use the ratio bin content to select the width, it can give us the best ROC curves, so the second one, we draw the ratio histogram, and we find the highest ratio histogram bin content to be the first bin.<br />
- (3)And we compare the left and the right ratio bin content, the higher side we will add that side to be the next one width. For example, if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than we will add 14th to be the next width, so our next width is [14th,15th], and so on. ( I will add some special condition and our setting ).
-
-*For MannWhitney test, remembering that when the number close to zero, it means the distinguish power is better.<br />
-
-#### For summary: 
-*There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
+For summary: 
+* There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 
 
