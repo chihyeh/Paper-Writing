@@ -59,7 +59,7 @@ For summary:
 <ul>
 <li>All histograms include underflow and overflow numbers in the bin 1 and the last bin.</li>
 <li>After selecting with Prof.Ashutosh, we choose <strong>0.5GEV CUT</strong>(exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.</li>
-<li>In the FIGs, inclunding the histigrams of signal and background, and MannWhitney value.</li>
+<li>In the FIGs, inclunding the histograms of signal and background, and MannWhitney value.</li>
 </ul>
 </li>
 </ul>
@@ -70,9 +70,9 @@ For summary:
 <li>There have many steps as following
 <ol>
 <li>By the paper from Professor Jesse Thaler from MIT-->[The recursive soft drop](https://link.springer.com/content/pdf/10.1007%2FJHEP06%282018%29093.pdf)<br />
-    He suggested us to cut the mass (Becasue we find that beta=0 is better to distinguish background from signal than beta=2, we choose beta=0 soft drop mass to cut) at signal 50%, so the first step, we cut at there. I will talk about the detail of analysis in the PS1.</li>
+    He suggested us to cut the mass (Becasue we found that beta=0 is better to distinguish signal from background than beta=2, we choose beta=0 soft drop mass to cut) at signal 50%, so the first step, we cut at there. I will talk about the detail of analysis in the PS1.</li>
 <li>From Pearson lemma, it told us that using the ratio bin content <strong>[SIG/BKG]</strong> to select the width, it can give us the best ROC curve, so the second step, we draw the ratio histogram, and we find the highest ratio bin content to be the first bin (Starting bin,Seed bin) and draw the ROC curves.</li>
-<li>Then, We compare left and right ratio bin content from the highest ratio bin, We will add the higher side to be our next width, and keep comparing left and right ratio bin content out of the next width. For example:
+<li>Then, We compare left and right ratio bin content of the highest ratio bin, We will add the higher side to be our next width, and keep comparing left and right ratio bin content in the new width. For example:
 <ol>
 <li>[ath,bth] means [ath bin to bth bin]==>[14th,16th] means 14th,15th,16th.
 <li>if the 15th bin has the highest ratio bin content, we will compare 14th and 16th, if 14th is higher than 16th, we will add 14th to be the next width, so our next width is [14th,15th].</li>
@@ -84,7 +84,7 @@ For summary:
 </ul>
 
 For summary: 
-* There are <strong>no improvement</strong> in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
+* There are <strong>NO IMPROVEMENT</strong> in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 <br />
 <br />
 
@@ -105,7 +105,7 @@ For summary:
 <ul>
 <li>In the default ratio bin content, we use <strong>[SIG/BKG]</strong> in root "Divide" function [bin by bin], but we found that when SIG bin content!=0 and BKG bin content=0, that bin's ratio bin content is zero in default. But in the math, if !0/0, it will be an extreme value, so we set an extreme value manually when [SIG bin content!=0 and BKG bin content=0] happen. All other ratio bin contents are same as default.</li>
 <br />
-<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side (or both sides), and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. The formula is [Signal/background] of the Integral value, I will give an example later.
+<li>When we compare left and right ratio bin content, in some conditions, we could bump into the ratio bin content is zero in the certain side (or both sides), and we set other value to represent this ratio bin content. In general, we use the signal and background bins before ( when this bin is left ) or after ( when this bin is right ) this ratio bin content. I will give the example later.
 <ul>
 <li>Now, supposing that our width now is [14th,15th], we want to compare 13th with 16th.</li>
 <li>If the left ratio bin content is zero (13th bin) in default, we will see two things : Integral.[Minimum bin number=1th in our study, 12th] of SIG and BKG, and using the setting value to represent this ratio bin content.
