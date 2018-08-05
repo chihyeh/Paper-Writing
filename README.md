@@ -38,7 +38,7 @@ This part is from Dr.Sergei.<br />
 <li>We use the median bin from signal, and fix at that bin **Right side** to be the central, and change the width to plot the ROC curves.
 </ul>
 </li>
-<ul>
+</ul>
 <br />
 For summary:<br />
 <ol>
