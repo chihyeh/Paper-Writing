@@ -40,7 +40,7 @@ This part is from Dr.Sergei.<br />
 <li>For analysis
 <ul>
 <li>We use the <strong>MEDIAN BIN</strong> from signal, and fix at that bin <strong>RIGHT SIDE</strong> to be the central value, and change the width to plot the ROC curves</li>
-<li>We choose <strong>Cluster</strong> to do the analysis as before mention.</li>
+<li>We choose <strong>CLUSTER</strong> to do the analysis as before mention.</li>
 </ul>
 </li>
 </ul>
@@ -58,7 +58,7 @@ For summary:
 <li>For histograms
 <ul>
 <li>All histograms include underflow and overflow number in the bin 1 and the last bin.</li>
-<li>After selecting with Prof.Ashutosh, we choose 0.5GeV cut (exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.</li>
+<li>After selecting with Prof.Ashutosh, we choose <strong>0.5GEV CUT</strong>(exclude cluster and 0.25GeV) for summary, both for ROC curves and MannWhitney U test.</li>
 <li>In the FIGs, inclunding the histigrams of signal and background, and MannWhitney value.</li>
 </ul>
 </li>
@@ -81,10 +81,8 @@ For summary:
 For summary: 
 * There are no improvement in all variables in the smallest detector cell size. In some of variables, the biggest detector cell size is the best. This is an inetresting condition.<br />
 
-```bash
-For the strategy about the analysis for Tau and C variables, I will tell in this section:
 
-```
+
 
 
 
