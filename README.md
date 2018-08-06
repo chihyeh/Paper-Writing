@@ -51,7 +51,7 @@ For summary:
 <li>We can conclude that in soft drop method, beta=0 can separate signal and background <strong>PERFECTLY up to 20 TeV center-of-mass energy</strong> in the smallest detector cell size. Bigger than that, both of tt and ww can't be distinguished from qq by smallest detector cell size perfectly.</li>
 <li>In beta=2, there are <strong>NO IMPROVEMENT</strong> in all center-of-mass energies when detector cell size is smallest.</li>
 </ol>
-=============================================
+=============================================<br />
 ### [fcc_Mannuwhitney_eff_New_mass_cut_no_UOF.tex](https://github.com/chihyeh/Paper-Writing/blob/master/fcc_Mannuwhitney_eff_New_mass_cut_no_UOF.tex)
 #### This part include Tau21,Tau32,C2b1, and MannWhitney U test
 <ul>
