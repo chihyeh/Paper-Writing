@@ -52,7 +52,7 @@ For summary:
 <li>In beta=2, there are <strong>NO IMPROVEMENT</strong> in all center-of-mass energies when detector cell size is smallest.</li>
 </ol>
 =============================================<br />
-### [fcc_Mannuwhitney_eff_New_mass_cut_no_UOF.tex](https://github.com/chihyeh/Paper-Writing/blob/master/fcc_Mannuwhitney_eff_New_mass_cut_no_UOF.tex)
+### [fcc_Mass_soft_drop_for_paper_new_no_UOF.tex](https://github.com/chihyeh/Paper-Writing/blob/master/fcc_Mass_soft_drop_for_paper_new_no_UOF.tex)
 #### This part include Tau21,Tau32,C2b1, and MannWhitney U test
 <ul>
 <li>Histograms
