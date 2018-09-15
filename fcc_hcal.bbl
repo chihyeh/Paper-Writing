@@ -5,6 +5,9 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+
+
+
 \bibitem{Benedikt:2206376}
 M.~Benedikt, \href{http://cds.cern.ch/record/2206376}{{The Global Future
   Circular Colliders Effort}}{CERN-ACC-SLIDES-2016-0016. Presented at P5
@@ -123,5 +126,34 @@ J.~Thaler, K.~Van~Tilburg, {Identifying Boosted Objects with N-subjettiness},
 \newblock \href {http://arxiv.org/abs/1011.2268} {\path{arXiv:1011.2268}},
   \href {http://dx.doi.org/10.1007/JHEP03(2011)015}
   {\path{doi:10.1007/JHEP03(2011)015}}.
+
+
+\bibitem{Larkoski:2014wba} 
+  A.~J.~Larkoski, S.~Marzani, G.~Soyez and J.~Thaler,
+  %``Soft Drop,''
+  JHEP {\bf 1405}, 146 (2014).
+%  doi:10.1007/JHEP05(2014)146
+%  [arXiv:1402.2657 [hep-ph]].
+  %%CITATION = doi:10.1007/JHEP05(2014)146;%%
+  %278 citations counted in INSPIRE as of 05 Sep 2018
+
+\bibitem{Dokshitzer:1997in} 
+  Y.~L.~Dokshitzer, G.~D.~Leder, S.~Moretti and B.~R.~Webber,
+  %``Better jet clustering algorithms,''
+  JHEP {\bf 9708}, 001 (1997).
+%  doi:10.1088/1126-6708/1997/08/001
+%  [hep-ph/9707323].
+  %%CITATION = doi:10.1088/1126-6708/1997/08/001;%%
+  %901 citations counted in INSPIRE as of 05 Sep 2018
+
+\bibitem{Wobisch:1998wt} 
+  M.~Wobisch and T.~Wengler,
+  %``Hadronization corrections to jet cross-sections in deep inelastic scattering,''
+  In *Hamburg 1998/1999, Monte Carlo generators for HERA physics* 270-279.
+%  [hep-ph/9907280].
+  %%CITATION = HEP-PH/9907280;%%
+  %486 citations counted in INSPIRE as of 05 Sep 2018
+
+
 
 \end{thebibliography}
