@@ -4,6 +4,9 @@ The top-level auxiliary file: fcc_hcal.aux
 The style file: elsarticle-num.bst
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "Ellis:2009su"
+Warning--I didn't find a database entry for "Larkoski:2014wba"
+Warning--I didn't find a database entry for "Dokshitzer:1997in"
+Warning--I didn't find a database entry for "Wobisch:1998wt"
 Warning--empty journal in Benedikt:2206376
 Warning--empty pages in Calkins:2013ega
 Warning--empty journal in Chekanov:2015ihl
@@ -13,7 +16,7 @@ Warning--empty journal in fastjet
 Warning--empty journal in Auerbach:2014xua
 You've used 19 entries,
             2955 wiz_defined-function locations,
-            822 strings with 9112 characters,
+            828 strings with 9206 characters,
 and the built_in function-call counts, 5732 in all, are:
 = -- 539
 > -- 193
@@ -52,4 +55,4 @@ warning$ -- 7
 while$ -- 31
 width$ -- 21
 write$ -- 192
-(There were 8 warnings)
+(There were 11 warnings)
